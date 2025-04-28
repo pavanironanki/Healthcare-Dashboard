@@ -37,9 +37,7 @@ Data is fetched from:
 
 https://fedskillstest.coalitiontechnologies.workers.dev
 
-Authorization: Basic Authentication (Username: coalition, Password: skills-test)
-
-Only Jessica Taylor's data is displayed as per the test instructions.
+Only Jessica Taylor's data is displayed.
 
 
 ### `How to Run
@@ -74,4 +72,4 @@ npm start
 
 
 ### Full Dashboard View
-![Dashboard Screenshot](icons/Dashboard.png)
+![Dashboard Screenshot](public/icons/Dashboard.png)
