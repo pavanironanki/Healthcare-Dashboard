@@ -1,73 +1,77 @@
-# Getting Started with Create React App
+# Healthcare Dashboard
+A clean Healthcare Dashboard built in React.js fetching patient data via API, displaying vitals, diagnosis history, and lab results with modern UI.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Features
+
+✅ Fetches patient data (Jessica Taylor) securely from a provided API.
+
+✅ Displays Diagnosis History (Blood Pressure trends) using Chart.js.
+
+✅ Shows Patient Profile with Name, DOB, Gender, Contact, Emergency Contact, Insurance.
+
+✅ Displays Vitals: Respiratory Rate, Temperature, and Heart Rate.
+
+✅ Lists Diagnostic Problems and their status (e.g., Under Observation, Cured).
+
+✅ Lists Lab Results with Download icons.
+
+✅ Fully responsive and clean design using custom CSS.
 
 In the project directory, you can run:
 
-### `npm start`
+### Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React.js (Frontend)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Chart.js (Graphs)
 
-### `npm test`
+Custom CSS (Styling)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+API Authentication (Basic Auth)
 
-### `npm run build`
+### API Details
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Data is fetched from:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://fedskillstest.coalitiontechnologies.workers.dev
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Authorization: Basic Authentication (Username: coalition, Password: skills-test)
 
-### `npm run eject`
+Only Jessica Taylor's data is displayed as per the test instructions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `How to Run
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone this repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+git clone https://github.com/your-username/healthcare-dashboard.git
 
-## Learn More
+Install dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Start the application:
 
-### Code Splitting
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Folder Structure
+/public
+   /icons  -> Custom Icons
+/src
+   /components
+      - DiagnosisHistory.js
+      - InfoCards.js
+      - PatientProfile.js
+      - DiagnosticList.js
+      - LabResults.js
+   /api
+      - API call logic
+   App.js
+   App.css
+   README.md
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Healthcare-Dashboard
-# Healthcare-Dashboard
-# Healthcare-Dashboard
+### Full Dashboard View
+![Dashboard Screenshot](icons/Dashboard.png)
